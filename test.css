@@ -1,0 +1,337 @@
+*{
+position: relative;
+width: 1920px;
+height: 1080px;
+
+background: black;
+}
+
+.page-loaded body {
+    opacity: 1;
+}
+
+/* Home */
+
+
+header{
+position: absolute;
+width: 187px;
+height: 700px;
+left: 129px;
+top: 109px;
+width:30%;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 800;
+font-size: 64px;
+line-height: 77px;
+
+color: white;
+animation: fadeIn 0.5s 0s forwards;
+}
+
+
+nav{
+
+
+position: absolute;
+width: 251px;
+height: 77px;
+left: 129px;
+top: 501px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+content: "Welcome,\nMinJu's Portfolio";
+white-space: pre; 
+animation: fadeIn 0.5s 0s forwards;
+
+}
+
+
+footer{
+
+
+position: absolute;
+width: 146px;
+height: 38px;
+left: 165px;
+top: 635px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
+color: #C0BABA;
+animation: fadeIn 0.5s 0s forwards;
+}
+
+.button{
+    
+
+
+position: absolute;
+    width: 308px;
+    height: 77px;
+    left: 1051px;
+    top: 131px;
+    border: none;
+    color: #FFFFFF; 
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+
+}
+.button:hover {
+    transform: translateY(-10px); /* 버튼을 위로 10px 이동 */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+
+/* 애니메이션 정의 */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* 초기 위치 */
+    }
+    50% {
+        transform: translateY(-5px); /* 위로 이동 */
+    }
+    100% {
+        transform: translateY(0); /* 원래 위치로 돌아오기 */
+    }
+}
+
+
+#About{
+    left: 1051px;
+    top: 131px;
+}
+
+#Project{
+    left: 1011px;
+    top: 241px;
+
+
+
+}
+#GitHub{
+
+    left: 1011px;
+    top: 351px;
+
+
+
+
+}
+#left{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px 0px 0px 16px;
+
+position: absolute;
+width: 866px;
+height: 181px;
+left: 1057px;
+top: 993px;
+
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+}
+
+#left{
+    position: absolute;
+width: 857px;
+height: 633px;
+left: 661px;
+top: 466px;
+    border: 0.005px solid white;
+    width: 35%;
+    height: 0.00000001px;
+    
+}
+
+
+/* About Me */
+
+#Home{
+/* Home */
+
+position: absolute;
+width: 191px;
+height: 81px;
+left: 740px;
+top: 186px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+
+}
+
+
+#Project1{
+/* Project */
+
+position: absolute;
+width: 191px;
+height: 81px;
+left: 740px;
+top: 302px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+
+
+}
+#GitHub1{
+
+ /* Git Hub */
+
+position: absolute;
+width: 191px;
+height: 81px;
+left: 740px;
+top: 417px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+
+
+
+}
+#AboutMe{
+    /* Hello, my name is MinJu */
+
+position: absolute;
+width: 430px;
+height: 46px;
+left: 1068px;
+top: 234px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+}
+#AboutMe2{
+    /* I’m Backend Developer and  currently looking for a job */
+
+position: absolute;
+width: 496px;
+height: 24px;
+left: 1068px;
+top: 331px;
+
+font-family: 'Inter';
+font-style: italic; 
+font-weight: 200;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+}
+
+/* Project */
+#About1{
+
+/* About Me */
+
+position: absolute;
+width: 191px;
+height: 81px;
+left: 740px;
+top: 302px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+
+}
+#Project2{
+    /* Project */
+
+position: absolute;
+width: 191px;
+height: 81px;
+left: 740px;
+top: 417px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+color: #FFFFFF;
+animation: fadeIn 0.5s 0s forwards;
+
+
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
