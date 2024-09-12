@@ -74,12 +74,10 @@ color: #C0BABA;
 animation: fadeIn 0.5s 0s forwards;
 }
 
-.button{
-    
-
-
-position: absolute;
-    width: 308px;
+/* 버튼 초기 스타일 */
+.button {
+    position: absolute;
+    width: 450px;
     height: 77px;
     left: 1051px;
     top: 131px;
@@ -92,27 +90,37 @@ position: absolute;
     text-align: center;
     cursor: pointer; 
     border-radius: 8px; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    animation: fadeIn 0.5s 0s forwards;
-
+    /* background-color:blue;   */
+    opacity: 0; /* 초기 상태에서 투명하게 설정 */
+    transform: translateY(50px); /* 기본 상태에서의 위치 */
+    animation: fadeIn 0.5s forwards; /* fadeIn 애니메이션 적용 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover 시 변화에 대해 부드러운 전환 */
 }
+
+/* 버튼에 마우스를 올리면 애니메이션 적용 */
 .button:hover {
-    transform: translateY(-10px); /* 버튼을 위로 10px 이동 */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+    transform: translateY(-10px); /* 마우스 올렸을 때 위로 이동 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 
-/* 애니메이션 정의 */
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0); /* 초기 위치 */
+/* 버튼이 클릭된 상태에서 애니메이션 적용 */
+.button:active {
+    transform: translateY(-5px); /* 클릭 시 살짝 위로 이동 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 클릭 시 그림자 감소 */
+}
+
+/* fadeIn 애니메이션 정의 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* 페이지 로드 시 아래에서 위로 이동 */
     }
-    50% {
-        transform: translateY(-5px); /* 위로 이동 */
-    }
-    100% {
-        transform: translateY(0); /* 원래 위치로 돌아오기 */
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 최종 상태에서 원래 위치로 */
     }
 }
+
 
 
 #About{
@@ -322,17 +330,5 @@ color: #FFFFFF;
 animation: fadeIn 0.5s 0s forwards;
 
 
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
